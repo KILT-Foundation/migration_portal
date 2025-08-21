@@ -345,10 +345,21 @@ const fetchNewBalance = async () => {
   <p>The migration window will open at 1200 UTC on Thursday June 19th and remain open for 10 weeks, closing at 1200 UTC on Thursday August 28th. All holders must migrate their tokens within this timeframe or their tokens will be lost.
   This portal allows you to migrate your tokens from the old Base contract to the new Base contract. Tokens on Polkadot or Ethereum must first be bridged to Base, as detailed in the <Link href="https://medium.com/kilt-protocol/kilt-token-migration-guide-4ae8a5b686d6" style={{ color: "#fff", textDecoration: "underline" }}>Migration Guide</Link>.</p>
   <p>Before using this portal, please carefully read the <Link href="https://medium.com/kilt-protocol/kilt-token-migration-guide-4ae8a5b686d6" style={{ color: "#fff", textDecoration: "underline" }}>Migration Guide</Link> in full.</p>
-  <h2 style={{ color: "#fff", marginTop: "20px" }}>Migration window closes in:</h2>
-  <p style={{ fontSize: "48px", fontWeight: "bold", color: "#fff", marginTop: "10px" }}>
-    {timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes
-  </p>
+  <div style={{
+    background: "rgba(215, 61, 128, 0.5)",
+    padding: "20px",
+    borderRadius: "8px",
+    marginTop: "20px",
+    textAlign: "center"
+  }}>
+    <h2 style={{ color: "#fff", marginBottom: "10px" }}>The migration window closes in:</h2>
+    <p style={{ fontSize: "48px", fontWeight: "bold", color: "#fff" }}>
+      {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m
+    </p>
+    <p style={{ fontSize: "24px", color: "#fff" }}>
+      at 1200 UTC, August 28th
+    </p>
+  </div>
 </div>
 {/* Right Column */}
 <br /><br />
@@ -360,7 +371,7 @@ const fetchNewBalance = async () => {
     textAlign: "center",
     color: "#fff",
     position: "relative",
-  marginTop: "20px"
+    marginTop: "20px"
   }}>
     <div style={{
       position: "absolute",

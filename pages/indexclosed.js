@@ -628,7 +628,7 @@ const fetchNewBalance = async () => {
               width: "20px",
               height: "20px",
               border: `3px solid ${isApproved ? "#fff" : "#000"}`,
-              borderTop: “3px solid transparent",
+              borderTop: "3px solid transparent",
               borderRadius: "50%",
               animation: "spin 1s linear infinite"
             }} />

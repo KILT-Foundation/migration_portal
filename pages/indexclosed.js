@@ -380,7 +380,7 @@ const fetchNewBalance = async () => {
       fontSize: "32px",
       fontWeight: "bold",
       color: "#fff",
-      zIndex: 2
+      zIndex: 0
     }}>
       Migration Portal
     </div>
@@ -388,7 +388,7 @@ const fetchNewBalance = async () => {
       position: "absolute",
       top: "20px",
       right: "20px",
-      zIndex: 2
+      zIndex: 0
     }}>
       <ConnectWallet />
     </div>
@@ -628,7 +628,7 @@ const fetchNewBalance = async () => {
               width: "20px",
               height: "20px",
               border: `3px solid ${isApproved ? "#fff" : "#000"}`,
-              borderTop: "3px solid transparent",
+              borderTop: “3px solid transparent",
               borderRadius: "50%",
               animation: "spin 1s linear infinite"
             }} />
